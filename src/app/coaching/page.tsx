@@ -3,166 +3,88 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Coaching | The A Company',
-  description: 'Executive coaching for founders and leaders navigating growth, transition, or transformation.',
+  description: 'Executive coaching designed to build your capacity and capability to excel. One-on-one developmental programs for leaders.',
 }
 
 export default function Coaching() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="container-wide">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading">
-              Coaching
-            </h1>
-            <p className="mt-6 text-xl text-gray-300">
-              One-on-one guidance for founders and executives navigating growth,
-              transition, or transformation. Honest perspective from someone who&apos;s been there.
-            </p>
-          </div>
+      <section 
+        className="relative pt-20 min-h-[400px] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80')`,
+        }}
+      >
+        <div className="text-center text-white px-6 py-16">
+          <h1 className="text-3xl md:text-4xl font-heading font-light tracking-wide">
+            Coaching
+          </h1>
         </div>
       </section>
 
-      {/* What We Offer */}
-      <section className="section-padding">
-        <div className="container-wide">
-          <div className="grid md:grid-cols-2 gap-16">
+      {/* Main Content */}
+      <section className="section-padding bg-white">
+        <div className="container-narrow">
+          <p className="text-lg font-light leading-relaxed tracking-wide text-center mb-12">
+            The most powerful point of leverage in your business is making sure that you
+            are reaching your potential. Coaching is a one-on-one developmental program
+            designed to build your capacity and capability to excel.
+          </p>
+
+          <div className="space-y-8">
             <div>
-              <h2 className="text-3xl font-heading">
-                A Thought Partner, Not a Guru
+              <h2 className="text-xl font-heading font-normal tracking-wide mb-4">
+                Who It&apos;s For
               </h2>
-              <p className="mt-6 text-brand-slate">
-                Leadership can be isolating. The higher you go, the fewer people you can
-                be fully honest with. Board members have agendas. Employees need confidence.
-                Friends don&apos;t always understand the context.
-              </p>
-              <p className="mt-4 text-brand-slate">
-                Executive coaching provides something rare: a confidential space to think
-                out loud with someone who understands the pressures you face.
-              </p>
-              <p className="mt-4 text-brand-slate">
-                We bring decades of operational experience across industries, so our
-                coaching is grounded in real-world business realities—not abstract
-                frameworks or motivational platitudes.
-              </p>
-            </div>
-            <div className="bg-brand-cream p-8">
-              <h3 className="font-heading text-lg mb-6">Coaching Focus Areas</h3>
-              <ul className="space-y-4">
-                <li className="flex gap-3">
-                  <span className="text-brand-gold">&#9679;</span>
-                  <span><strong>Leadership transitions</strong> — stepping into new roles, expanding scope, or letting go</span>
+              <ul className="space-y-3 text-brand-gray">
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Founders navigating growth and leadership challenges
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold">&#9679;</span>
-                  <span><strong>Team dynamics</strong> — building, managing, and getting the best from your people</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Executives stepping into expanded roles
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold">&#9679;</span>
-                  <span><strong>Decision-making</strong> — working through high-stakes choices with clarity</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Leaders facing significant transitions
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold">&#9679;</span>
-                  <span><strong>Founder challenges</strong> — the unique pressures of building something from nothing</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold">&#9679;</span>
-                  <span><strong>Work-life sustainability</strong> — performing at a high level without burning out</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  High-potential talent preparing for advancement
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* How It Works */}
-      <section className="section-padding bg-white">
-        <div className="container-narrow">
-          <h2 className="text-3xl font-heading text-center mb-12">
-            How Coaching Works
-          </h2>
-          <div className="space-y-8">
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-navy text-white flex items-center justify-center font-heading font-bold">
-                1
-              </div>
-              <div>
-                <h3 className="font-heading text-lg">Chemistry Conversation</h3>
-                <p className="mt-2 text-brand-slate">
-                  We start with a no-commitment conversation to understand what you&apos;re
-                  facing and see if there&apos;s a fit. Coaching only works with trust and rapport.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-navy text-white flex items-center justify-center font-heading font-bold">
-                2
-              </div>
-              <div>
-                <h3 className="font-heading text-lg">Regular Sessions</h3>
-                <p className="mt-2 text-brand-slate">
-                  Typically bi-weekly or monthly, structured around your priorities.
-                  Sessions are confidential and driven by what&apos;s most pressing for you.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-navy text-white flex items-center justify-center font-heading font-bold">
-                3
-              </div>
-              <div>
-                <h3 className="font-heading text-lg">Between-Session Support</h3>
-                <p className="mt-2 text-brand-slate">
-                  Challenges don&apos;t wait for scheduled meetings. Light-touch access
-                  for when you need a quick sounding board or gut check.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-navy text-white flex items-center justify-center font-heading font-bold">
-                4
-              </div>
-              <div>
-                <h3 className="font-heading text-lg">Periodic Review</h3>
-                <p className="mt-2 text-brand-slate">
-                  Regular check-ins on whether the coaching is serving you. Adjust
-                  the focus, cadence, or approach as your needs evolve.
-                </p>
-              </div>
+            <div>
+              <h2 className="text-xl font-heading font-normal tracking-wide mb-4">
+                The Coaching Experience
+              </h2>
+              <p className="text-brand-gray leading-relaxed">
+                Our coaching engagements are structured yet flexible, tailored to your
+                specific development needs. We combine regular sessions with real-time
+                support during critical moments—because leadership challenges don&apos;t
+                follow a schedule.
+              </p>
+              <p className="text-brand-gray leading-relaxed mt-4">
+                You&apos;ll work with someone who has been in your shoes, who understands
+                the pressures you face, and who can offer honest perspective grounded
+                in real operational experience.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Modern Leadership */}
-      <section className="section-padding bg-brand-cream">
-        <div className="container-narrow text-center">
-          <h2 className="text-3xl font-heading">
-            Leading in a Changing Landscape
-          </h2>
-          <p className="mt-6 text-brand-slate">
-            Today&apos;s leaders face challenges that didn&apos;t exist a few years ago.
-            Remote and hybrid teams. AI transforming every function. Faster cycle times
-            and higher expectations. Our coaching helps you navigate this shifting
-            terrain with confidence—separating signal from noise and focusing on
-            what actually matters for your business.
-          </p>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-brand-navy text-white">
+      <section className="section-padding bg-brand-lightGray">
         <div className="container-narrow text-center">
-          <h2 className="text-3xl font-heading">
-            Interested in Coaching?
+          <h2 className="text-2xl font-heading font-light tracking-wide">
+            Ready to invest in your development?
           </h2>
-          <p className="mt-4 text-gray-300">
-            Let&apos;s have a conversation. No commitment—just a chance to see
-            if there&apos;s a fit.
-          </p>
           <Link href="/contact" className="mt-8 btn-primary inline-block">
-            Schedule an Intro Call
+            Book a Consultation
           </Link>
         </div>
       </section>

@@ -10,138 +10,66 @@ export default function About() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="container-wide">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading">
-              About
-            </h1>
-            <p className="mt-6 text-xl text-gray-300">
-              Operational leadership grounded in real experience. We&apos;ve built,
-              scaled, and transformed organizations—and we bring that perspective
-              to every engagement.
-            </p>
-          </div>
+      <section 
+        className="relative pt-20 min-h-[400px] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1920&q=80')`,
+        }}
+      >
+        <div className="text-center text-white px-6 py-16">
+          <h1 className="text-3xl md:text-4xl font-heading font-light tracking-wide">
+            About
+          </h1>
         </div>
       </section>
 
-      {/* Story */}
-      <section className="section-padding">
-        <div className="container-narrow">
-          <h2 className="text-3xl font-heading">
-            Why &ldquo;The A Company&rdquo;?
-          </h2>
-          <p className="mt-6 text-brand-slate">
-            The name reflects a simple belief: every organization deserves A-level
-            operational leadership. Not the kind you read about in business books—the
-            kind that shows up every day, rolls up its sleeves, and does the work.
-          </p>
-          <p className="mt-4 text-brand-slate">
-            We founded The A Company because we kept seeing the same pattern: talented
-            founders and executives stretched too thin, capable teams lacking coordination,
-            potential unrealized because the operational infrastructure wasn&apos;t there.
-          </p>
-          <p className="mt-4 text-brand-slate">
-            We knew we could help. Not with advice from the sidelines, but with hands-on
-            leadership that makes a real difference.
-          </p>
-        </div>
-      </section>
-
-      {/* Experience */}
+      {/* Main Content */}
       <section className="section-padding bg-white">
         <div className="container-wide">
-          <h2 className="text-3xl font-heading text-center mb-12">
-            What We Bring
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading">Cross-Industry Experience</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Technology, healthcare, financial services, manufacturing, professional
-                services. Different contexts, but operational excellence translates.
-              </p>
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Photo placeholder */}
+            <div className="flex justify-center">
+              <div className="w-full max-w-sm aspect-[3/4] bg-gray-200 rounded-sm overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400" />
+              </div>
             </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading">Full SDLC Expertise</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Deep experience across the entire software development lifecycle—from
-                product strategy to architecture to delivery to operations.
-              </p>
-            </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading">Product & Technology</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Hands-on experience building products and leading technology teams.
-                We speak both business and engineering.
-              </p>
-            </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading">Team Leadership</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Built and led teams from startup to scale-up. Hiring, developing,
-                and getting the best from people.
-              </p>
-            </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading">Program Management</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Complex initiatives, cross-functional coordination, and making
-                things happen on time and on budget.
-              </p>
-            </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading">Modern Capabilities</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Hands-on experience with today&apos;s tools—including building production
-                AI systems and intelligent automation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Philosophy */}
-      <section className="section-padding bg-brand-cream">
-        <div className="container-wide">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Bio */}
             <div>
-              <h2 className="text-3xl font-heading">
-                How We Work
+              <p className="text-lg font-light leading-relaxed tracking-wide mb-6">
+                As an executive, I came to realize the critical value of having an external
+                partner to support my decision making, to act as a guide for my own development,
+                and provide immediate access to expert resources that could be called upon
+                in the most critical moments.
+              </p>
+              <p className="text-lg font-light leading-relaxed tracking-wide mb-6">
+                I&apos;ve now dedicated my time to providing that for other leaders looking
+                to reach their potential.
+              </p>
+
+              <h2 className="text-xl font-heading font-normal tracking-wide mt-8 mb-4">
+                Background
               </h2>
-              <p className="mt-6 text-brand-slate">
-                We believe operational leadership should be practical, not theoretical.
-                Every engagement starts with understanding your specific situation—not
-                applying a framework.
-              </p>
-              <p className="mt-4 text-brand-slate">
-                We work embedded with your team, not from a distance. We take
-                accountability for outcomes, not just deliverables. And we build
-                capabilities that outlast our engagement.
-              </p>
-              <p className="mt-4 text-brand-slate">
-                Our goal is always to make ourselves unnecessary—to leave your
-                organization stronger and more capable than we found it.
-              </p>
-            </div>
-            <div className="bg-white p-8">
-              <h3 className="font-heading text-lg mb-6">Our Values</h3>
-              <ul className="space-y-4 text-brand-slate">
-                <li className="flex gap-3">
-                  <span className="text-brand-gold font-bold">&#8226;</span>
-                  <span><strong>Honesty over comfort.</strong> We&apos;ll tell you what you need to hear.</span>
+              <ul className="space-y-3 text-brand-gray">
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  25+ years of cross-industry operational experience
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold font-bold">&#8226;</span>
-                  <span><strong>Outcomes over activity.</strong> Results matter more than busywork.</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Product development and technology leadership
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold font-bold">&#8226;</span>
-                  <span><strong>Sustainable over heroic.</strong> Systems beat sprints.</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Program and project management expertise
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold font-bold">&#8226;</span>
-                  <span><strong>Partnership over transaction.</strong> We&apos;re invested in your success.</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Deep experience across the full software development lifecycle
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Hands-on builder of modern operational systems
                 </li>
               </ul>
             </div>
@@ -149,18 +77,49 @@ export default function About() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section-padding bg-brand-navy text-white">
-        <div className="container-narrow text-center">
-          <h2 className="text-3xl font-heading">
-            Let&apos;s Talk
+      {/* Values Section */}
+      <section className="section-padding bg-brand-lightGray">
+        <div className="container-narrow">
+          <h2 className="text-2xl font-heading font-light tracking-wide text-center mb-12">
+            How We Work
           </h2>
-          <p className="mt-4 text-gray-300">
-            Interested in working together? We&apos;d love to hear about
-            what you&apos;re building.
-          </p>
+          <div className="grid md:grid-cols-3 gap-8 text-center">
+            <div>
+              <h3 className="text-lg font-heading font-normal tracking-wide mb-3">
+                Hands-On
+              </h3>
+              <p className="text-sm text-brand-gray">
+                We operate alongside you, not just advise from the sidelines.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-heading font-normal tracking-wide mb-3">
+                Honest
+              </h3>
+              <p className="text-sm text-brand-gray">
+                We tell you what you need to hear, not just what you want to hear.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-heading font-normal tracking-wide mb-3">
+                Accountable
+              </h3>
+              <p className="text-sm text-brand-gray">
+                We stand behind our work and measure success by your outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section-padding bg-white">
+        <div className="container-narrow text-center">
+          <h2 className="text-2xl font-heading font-light tracking-wide">
+            Let&apos;s discuss how we can help
+          </h2>
           <Link href="/contact" className="mt-8 btn-primary inline-block">
-            Get in Touch
+            Book a Consultation
           </Link>
         </div>
       </section>

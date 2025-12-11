@@ -3,122 +3,74 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Strategy | The A Company',
-  description: 'Strategic planning and assessment that leads to action. Clear-eyed analysis of where you are and practical roadmaps to get where you need to go.',
+  description: 'Strat PaaS™ - Strategy Partner as a Service. An informed and independent partner providing insight, experience, and expertise for critical decisions.',
 }
 
 export default function Strategy() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="container-wide">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading">
-              Strategy
-            </h1>
-            <p className="mt-6 text-xl text-gray-300">
-              Strategic clarity that actually leads to action. We help you see
-              your situation clearly and build practical roadmaps that get executed.
-            </p>
-          </div>
+      <section 
+        className="relative pt-20 min-h-[400px] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80')`,
+        }}
+      >
+        <div className="text-center text-white px-6 py-16">
+          <h1 className="text-3xl md:text-4xl font-heading font-light tracking-wide">
+            Strat PaaS™
+          </h1>
+          <p className="mt-2 text-lg font-light">
+            Strategy Partner as a Service
+          </p>
         </div>
       </section>
 
-      {/* Our Approach */}
-      <section className="section-padding">
-        <div className="container-wide">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl font-heading">
-                Strategy That Ships
-              </h2>
-              <p className="mt-6 text-brand-slate">
-                Too many strategy engagements end with a beautiful deck that collects dust.
-                We take a different approach: strategy inseparable from execution.
-              </p>
-              <p className="mt-4 text-brand-slate">
-                Our strategic work begins with honest assessment—what&apos;s working, what isn&apos;t,
-                and what the data actually says. From there, we build practical roadmaps with
-                clear owners, timelines, and success metrics.
-              </p>
-              <p className="mt-4 text-brand-slate">
-                And because we often stay on in operational roles, we stand behind our recommendations.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <div className="bg-white p-6 border-l-4 border-brand-gold">
-                <h3 className="font-heading">Assessment</h3>
-                <p className="mt-2 text-sm text-brand-slate">
-                  Honest evaluation of market position, operational capabilities,
-                  financial health, and competitive dynamics.
-                </p>
-              </div>
-              <div className="bg-white p-6 border-l-4 border-brand-gold">
-                <h3 className="font-heading">Prioritization</h3>
-                <p className="mt-2 text-sm text-brand-slate">
-                  Ruthless focus on what matters most. We help you say no to
-                  good ideas so you can execute great ones.
-                </p>
-              </div>
-              <div className="bg-white p-6 border-l-4 border-brand-gold">
-                <h3 className="font-heading">Roadmapping</h3>
-                <p className="mt-2 text-sm text-brand-slate">
-                  Concrete plans with milestones, owners, and accountability.
-                  Strategy you can actually track progress against.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Strategic Areas */}
+      {/* Main Content */}
       <section className="section-padding bg-white">
-        <div className="container-wide">
-          <h2 className="text-3xl font-heading text-center mb-12">
-            Strategic Focus Areas
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading text-lg">Growth Strategy</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                New markets, new products, new revenue streams. We help you identify
-                and prioritize the highest-impact growth opportunities.
-              </p>
+        <div className="container-narrow">
+          <p className="text-lg font-light leading-relaxed tracking-wide text-center mb-12">
+            An informed and independent partner at the table providing the insight,
+            experience, and expertise you need when working through the most critical decisions.
+          </p>
+
+          <div className="space-y-8">
+            <div>
+              <h2 className="text-xl font-heading font-normal tracking-wide mb-4">
+                What We Offer
+              </h2>
+              <ul className="space-y-3 text-brand-gray">
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Strategic planning and facilitation
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Market analysis and competitive positioning
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Growth strategy and roadmap development
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  M&A strategy and due diligence support
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Board and investor communications
+                </li>
+              </ul>
             </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading text-lg">Operational Strategy</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Building the infrastructure to scale. From team structure to
-                process design to technology investments.
-              </p>
-            </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading text-lg">Technology Strategy</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Evaluating build vs. buy, modernization initiatives, and where
-                technology can create competitive advantage—including AI where it makes sense.
-              </p>
-            </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading text-lg">Product Strategy</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Roadmap prioritization, market positioning, and building products
-                that customers actually want and will pay for.
-              </p>
-            </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading text-lg">Partnership Strategy</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                Identifying, evaluating, and structuring partnerships that
-                accelerate your business goals.
-              </p>
-            </div>
-            <div className="p-6 bg-brand-cream">
-              <h3 className="font-heading text-lg">Turnaround Planning</h3>
-              <p className="mt-3 text-sm text-brand-slate">
-                When things aren&apos;t working, clear-eyed assessment and
-                pragmatic plans to get back on track.
+
+            <div>
+              <h2 className="text-xl font-heading font-normal tracking-wide mb-4">
+                How It Works
+              </h2>
+              <p className="text-brand-gray leading-relaxed">
+                Unlike traditional consulting engagements, Strat PaaS provides ongoing
+                strategic partnership. We become an extension of your leadership team,
+                available when you need us for the decisions that matter most.
               </p>
             </div>
           </div>
@@ -126,17 +78,13 @@ export default function Strategy() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-brand-navy text-white">
+      <section className="section-padding bg-brand-lightGray">
         <div className="container-narrow text-center">
-          <h2 className="text-3xl font-heading">
-            Need Strategic Clarity?
+          <h2 className="text-2xl font-heading font-light tracking-wide">
+            Ready to strengthen your strategic capabilities?
           </h2>
-          <p className="mt-4 text-gray-300">
-            Sometimes you need an outside perspective to see your situation clearly.
-            Let&apos;s talk about what you&apos;re facing.
-          </p>
           <Link href="/contact" className="mt-8 btn-primary inline-block">
-            Start a Conversation
+            Book a Consultation
           </Link>
         </div>
       </section>

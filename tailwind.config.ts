@@ -9,15 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['"Space Grotesk"', 'sans-serif'],
-        body: ['Lato', 'sans-serif'],
+        heading: ['Raleway', 'sans-serif'],
+        body: ['Open Sans', 'sans-serif'],
       },
       colors: {
         brand: {
-          navy: '#1a2b4a',
-          slate: '#3d4f6f',
-          gold: '#c9a962',
-          cream: '#f8f6f1',
+          red: '#FC0303',
+          tan: '#A08060',
+          tanHover: '#8A6E52',
+          charcoal: '#333333',
+          gray: '#666666',
+          lightGray: '#f5f5f5',
           white: '#ffffff',
         }
       },

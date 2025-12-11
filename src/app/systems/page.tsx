@@ -3,168 +3,90 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Systems | The A Company',
-  description: 'Operational systems that scale. We build processes, tools, and frameworks that let your organization run smoothly.',
+  description: 'Systems and Process Consulting. Designing and integrating the systems you need to scale while maintaining an agile, innovation-driven culture.',
 }
 
 export default function Systems() {
   return (
     <>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="container-wide">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-heading">
-              Systems
-            </h1>
-            <p className="mt-6 text-xl text-gray-300">
-              Operational infrastructure that scales. We build the processes, tools, and
-              frameworks that let your organization run smoothly—even when you&apos;re not watching.
-            </p>
-          </div>
+      <section 
+        className="relative pt-20 min-h-[400px] flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80')`,
+        }}
+      >
+        <div className="text-center text-white px-6 py-16">
+          <h1 className="text-3xl md:text-4xl font-heading font-light tracking-wide">
+            Systems and Process Consulting
+          </h1>
         </div>
       </section>
 
-      {/* The Problem */}
-      <section className="section-padding">
-        <div className="container-narrow">
-          <h2 className="text-3xl font-heading text-center">
-            From Heroics to Systems
-          </h2>
-          <p className="mt-6 text-brand-slate text-center max-w-2xl mx-auto">
-            Early-stage companies run on heroics. Key people working long hours, making
-            things happen through sheer effort. But heroics don&apos;t scale.
-          </p>
-          <p className="mt-4 text-brand-slate text-center max-w-2xl mx-auto">
-            Eventually, the heroes burn out, tribal knowledge walks out the door, and
-            the company hits a ceiling. The path forward requires systems: documented
-            processes, clear accountability, and tools that work.
-          </p>
-        </div>
-      </section>
-
-      {/* What We Build */}
+      {/* Main Content */}
       <section className="section-padding bg-white">
-        <div className="container-wide">
-          <h2 className="text-3xl font-heading text-center mb-12">
-            What We Build
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-8 border border-gray-100 hover:border-brand-gold transition-colors">
-              <h3 className="font-heading text-xl">Process Infrastructure</h3>
-              <p className="mt-4 text-brand-slate">
-                Documented, repeatable processes for core business functions.
-                Clear owners, defined inputs and outputs, measurable quality standards.
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-brand-slate">
-                <li>• Operations playbooks and runbooks</li>
-                <li>• Quality management systems</li>
-                <li>• Escalation and exception handling</li>
-                <li>• Onboarding and training programs</li>
-              </ul>
-            </div>
-            <div className="p-8 border border-gray-100 hover:border-brand-gold transition-colors">
-              <h3 className="font-heading text-xl">Performance Management</h3>
-              <p className="mt-4 text-brand-slate">
-                Metrics, dashboards, and accountability structures that keep the
-                business on track without micromanagement.
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-brand-slate">
-                <li>• KPI frameworks and dashboards</li>
-                <li>• OKR implementation</li>
-                <li>• Meeting rhythms and reporting cadences</li>
-                <li>• Performance review systems</li>
-              </ul>
-            </div>
-            <div className="p-8 border border-gray-100 hover:border-brand-gold transition-colors">
-              <h3 className="font-heading text-xl">Technology & Tools</h3>
-              <p className="mt-4 text-brand-slate">
-                Selecting, implementing, and integrating the right tools for your
-                operations. We help you avoid both over-engineering and under-investing.
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-brand-slate">
-                <li>• Tool selection and vendor evaluation</li>
-                <li>• Implementation and integration</li>
-                <li>• Workflow automation</li>
-                <li>• Data infrastructure and reporting</li>
-              </ul>
-            </div>
-            <div className="p-8 border border-gray-100 hover:border-brand-gold transition-colors">
-              <h3 className="font-heading text-xl">Organizational Design</h3>
-              <p className="mt-4 text-brand-slate">
-                Team structures, role definitions, and communication patterns
-                that support your strategy and culture.
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-brand-slate">
-                <li>• Org structure and role design</li>
-                <li>• RACI and decision rights</li>
-                <li>• Cross-functional coordination</li>
-                <li>• Scaling team structures</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div className="container-narrow">
+          <p className="text-lg font-light leading-relaxed tracking-wide text-center mb-12">
+            Designing and integrating the systems you need to scale, while maintaining
+            an agile, innovation-driven culture and motivated team.
+          </p>
 
-      {/* Modern Capabilities */}
-      <section className="section-padding bg-brand-cream">
-        <div className="container-wide">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
             <div>
-              <h2 className="text-3xl font-heading">
-                Modern Operational Systems
+              <h2 className="text-xl font-heading font-normal tracking-wide mb-4">
+                Areas of Focus
               </h2>
-              <p className="mt-6 text-brand-slate">
-                We build systems that leverage what&apos;s possible today. That includes
-                intelligent automation where it reduces operational burden and
-                frees your team to focus on higher-value work.
-              </p>
-              <p className="mt-4 text-brand-slate">
-                But we&apos;re not technology-first. We start with the process and
-                the people, then apply the right tools—whether that&apos;s a simple
-                checklist, a workflow automation, or something more sophisticated.
-              </p>
-              <p className="mt-4 text-brand-slate">
-                The goal is systems that work reliably, that your team can maintain,
-                and that scale as you grow.
-              </p>
-            </div>
-            <div className="bg-white p-8">
-              <h3 className="font-heading text-lg mb-6">Our Principles</h3>
-              <ul className="space-y-4 text-brand-slate">
-                <li className="flex gap-3">
-                  <span className="text-brand-gold font-bold">01</span>
-                  <span><strong>Process before tools.</strong> Automate a bad process and you get bad results faster.</span>
+              <ul className="space-y-3 text-brand-gray">
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Planning structure and process design
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold font-bold">02</span>
-                  <span><strong>Simplest solution that works.</strong> Complexity is a liability.</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  System and process transformation
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold font-bold">03</span>
-                  <span><strong>Your team owns it.</strong> We build systems you can maintain without us.</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Performance management systems
                 </li>
-                <li className="flex gap-3">
-                  <span className="text-brand-gold font-bold">04</span>
-                  <span><strong>Iterate and improve.</strong> V1 shipped beats V2 planned.</span>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Cross-functional alignment
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-brand-red">•</span>
+                  Technology evaluation and implementation
                 </li>
               </ul>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-heading font-normal tracking-wide mb-4">
+                Our Approach
+              </h2>
+              <p className="text-brand-gray leading-relaxed">
+                We don&apos;t believe in one-size-fits-all solutions. We work to understand
+                your unique context, culture, and constraints to design systems that your
+                team will actually use—and that will scale with you.
+              </p>
+              <p className="text-brand-gray leading-relaxed mt-4">
+                Where appropriate, we leverage modern tools including intelligent automation
+                to reduce manual burden and improve consistency—always in service of your
+                team&apos;s effectiveness, not technology for its own sake.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-brand-navy text-white">
+      <section className="section-padding bg-brand-lightGray">
         <div className="container-narrow text-center">
-          <h2 className="text-3xl font-heading">
-            Ready to Build Systems That Scale?
+          <h2 className="text-2xl font-heading font-light tracking-wide">
+            Ready to build systems that scale?
           </h2>
-          <p className="mt-4 text-gray-300">
-            Let&apos;s talk about where your operations are today and what
-            infrastructure would make the biggest difference.
-          </p>
           <Link href="/contact" className="mt-8 btn-primary inline-block">
-            Get in Touch
+            Book a Consultation
           </Link>
         </div>
       </section>

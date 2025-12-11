@@ -7,8 +7,12 @@
     scroll-behavior: smooth;
   }
 
+  body {
+    @apply font-body text-brand-charcoal;
+  }
+
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-medium;
+    @apply font-heading font-light tracking-wide;
   }
 }
 
@@ -22,20 +26,24 @@
   }
 
   .btn-primary {
-    @apply inline-block bg-brand-navy text-white px-8 py-3 font-heading font-medium
-           hover:bg-brand-slate transition-colors duration-200;
+    @apply inline-block bg-brand-tan text-white px-8 py-3 font-heading font-normal tracking-wide
+           hover:bg-brand-tanHover transition-colors duration-200;
   }
 
   .btn-secondary {
-    @apply inline-block border-2 border-brand-navy text-brand-navy px-8 py-3 font-heading font-medium
-           hover:bg-brand-navy hover:text-white transition-colors duration-200;
+    @apply inline-block border border-brand-charcoal text-brand-charcoal px-8 py-3 font-heading font-light tracking-wide
+           hover:bg-brand-charcoal hover:text-white transition-colors duration-200;
   }
 
   .section-padding {
-    @apply py-20 md:py-28;
+    @apply py-16 md:py-24;
   }
 
-  .page-hero {
-    @apply pt-32 pb-16 md:pt-40 md:pb-20 bg-brand-navy text-white;
+  .accent-text {
+    @apply text-brand-red;
+  }
+
+  .nav-link {
+    @apply text-sm font-heading font-light tracking-wider text-brand-gray hover:text-brand-charcoal transition-colors;
   }
 }
